@@ -21,6 +21,10 @@ can have automated backups of our guests too.
 Repository in XenServer. Example: write to USB disk or NFS share on a NAS
 device.
 
+* Running guests are snapshotted before backup is taken.
+
+* Pool metadata is also backed up.
+
 * Designed to run once-per-day, although can be run less-frequently.
 
 ## Installation
@@ -30,6 +34,9 @@ device.
 * make install
 
 ## Usage
+
+*Important:* Only **running** guests are backed up by default. Use the `-a`
+flag to backup **all** guests.
 
 `xsbup -d /path/to/write/backups`
 
