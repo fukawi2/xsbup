@@ -35,8 +35,8 @@ device.
 
 ## Usage
 
-*Important:* Only **running** guests are backed up by default. Use the `-a`
-flag to backup **all** guests.
+**Important:** Only _running_ guests are backed up by default. Use the `-a`
+flag to backup _all_ guests.
 
 `xsbup -d /path/to/write/backups`
 
@@ -44,5 +44,5 @@ Check the online help (`xsbup -h`) for more information.
 
 ## Notes
 
-* "XVA is a format specific to Xen-based hypervisors for packaging a single VM
-as a single file archive of a descriptor and disk images" [Source](http://support.citrix.com/proddocs/topic/xencenter-61/xs-xc-vms-exportimport-about.html)
+* *"XVA is a format specific to Xen-based hypervisors for packaging a single VM
+as a single file archive of a descriptor and disk images"* [Source](http://support.citrix.com/proddocs/topic/xencenter-61/xs-xc-vms-exportimport-about.html)
