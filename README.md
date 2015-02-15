@@ -9,7 +9,7 @@ XenServer, often with only a single host -- IT staff who use XenServer at their
 work often run a free version in their (Home)Lab.
 
 XenServer itself has no automated backup tools, and there are limited
-third-party backup tools that match the free offerring of the XenServer
+third-party backup tools that match the free offering of the XenServer
 platform.
 
 This script has been developed for use in these small-scale deployments so we
@@ -26,6 +26,10 @@ device.
 * Pool metadata is also backed up.
 
 * Designed to run once-per-day, although can be run less-frequently.
+
+* Tested on:
+
+  * XenServer 6.2 (Single-host pool)
 
 ## Installation
 
