@@ -53,12 +53,12 @@ function renice_self() {
 function xe_param() {
   # Quick hack to grab the required paramater from the output of the xe command
   _param="$1"
-  # TODO: this can be done using bash string manipulation to save
-  #       creating extra processes.
   while read _data ; do
     _line=$(echo $_data | egrep "$_param")
     if [ $? -eq 0 ]; then
-      echo "$_line" | awk 'BEGIN{FS=": "}{print $2}'
+      # do not quote this line otherwise we end up with extra
+      # whitespace surrounding the value
+      echo ${_line#*:}
     fi
   done
   return 0
